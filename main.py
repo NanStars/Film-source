@@ -1,5 +1,9 @@
 import requests
 from lxml import etree
+# 导入包
+from selenium import webdriver
+# 导入时间模块，可用于控制打开网页的浏览时长，解决闪退问题
+import time
 
 www = ['https://www.hls5.world']
 urll = []
@@ -73,9 +77,22 @@ def Movie_List(url):
         MOVE_LIST.append(url)
 
 
+def chrome(URL):
+    # 定义访问路径
+
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option('detach', True)
+
+    OpenURL = webdriver.Chrome(options=options)
+
+    OpenURL.maximize_window()
+
+    OpenURL.get(URL)  # 打开百度浏览器
+
+
 if __name__ == '__main__':
     category(source_code())
     Movie_List(Directory_selection())
     index = int(input('请输入你要看的电影：  '))
     directory = MOVE_LIST[index]
-    print(directory)
+    chrome(directory)
