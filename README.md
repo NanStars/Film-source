@@ -62,9 +62,11 @@ ProjectName and Description
 
 
 ###### 开发前的配置要求
-
-1. xxxxx x.x.x
-2. xxxxx x.x.x
+#导入依赖库
+1.import requests
+2.from lxml import etree
+3.from selenium import webdriver
+4.import time
 
 ###### **安装步骤**
 
