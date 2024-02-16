@@ -145,9 +145,8 @@ filetree
 
 ### 作者
 
-xxx@xxxx
-
-知乎:xxxx  &ensp; qq:xxxxxx    
+@NanYi
+    
 
  *您也可以在贡献者名单中参看所有参与该项目的开发者。*
 
