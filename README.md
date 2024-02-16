@@ -62,12 +62,13 @@ ProjectName and Description
 
 
 ###### 开发前的配置要求
+'''sh
 #导入依赖库
 1.import requests
 2.from lxml import etree
 3.from selenium import webdriver
 4.import time
-
+'''
 ###### **安装步骤**
 
 1. Get a free API Key at [https://example.com](https://example.com)
